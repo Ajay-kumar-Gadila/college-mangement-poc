@@ -1,0 +1,14 @@
+# Ignore artifacts:
+build
+coverage
+dist
+
+package.json
+package-lock.json
+yarn.lock
+bun.lockb
+bunfig.toml
+
+node_modules
+
+*.toml
