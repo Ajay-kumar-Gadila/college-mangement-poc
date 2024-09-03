@@ -1,5 +1,5 @@
 
-import { createConnection } from './lib/dbConnection.js';
+import { createConnection } from './dbConnection.js';
 
 async function runQuery() {
   try {

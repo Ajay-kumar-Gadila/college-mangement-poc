@@ -31,7 +31,6 @@
   "homepage": "https://github.com/Ajay-kumar-Gadila/college-mangement-poc#readme",
   "devDependencies": {
     "@eslint/js": "^9.9.1",
-    "dot-env": "^0.0.1",
     "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.1.5",
@@ -41,6 +40,7 @@
     "prettier": "^3.3.3"
   },
   "dependencies": {
-    "mysql2": "^3.11.0"
+    "mysql2": "^3.11.0",
+    "path": "^0.12.7"
   }
 }
