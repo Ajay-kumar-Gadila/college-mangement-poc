@@ -1,14 +1,16 @@
+// import { executeSQLFile } from './dbConnection.js';
 
-import { createConnection } from './dbConnection.js';
+// async function setupDatabase() {
+//   try {
+//     await executeSQLFile('./college_schema.sql');
+//   } catch (err) {
+//     console.error('Error setting up the database:', err);
+//   }
+// }
 
-async function runQuery() {
-  try {
-    const connection = await createConnection();
+// setupDatabase();
 
-    await connection.end();
-  } catch (err) {
-    console.error('Error running query:', err);
-  }
-}
+// index.js
+import { createDatabase } from './databaseSetup.js';
 
-runQuery();
+createDatabase();
