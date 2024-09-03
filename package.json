@@ -2,7 +2,7 @@
   "name": "rebuild-2024",
   "version": "1.0.0",
   "description": "��#\u0000 \u0000c\u0000o\u0000l\u0000l\u0000e\u0000g\u0000e\u0000-\u0000m\u0000a\u0000n\u0000g\u0000e\u0000m\u0000e\u0000n\u0000t\u0000-\u0000p\u0000o\u0000c\u0000\r\u0000 \u0000",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "commit": "commit",
     "preinstall": "git submodule update --init --recursive",
@@ -31,11 +31,16 @@
   "homepage": "https://github.com/Ajay-kumar-Gadila/college-mangement-poc#readme",
   "devDependencies": {
     "@eslint/js": "^9.9.1",
+    "dot-env": "^0.0.1",
     "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.1.5",
     "husky-init": "^8.0.0",
     "lint-staged": "^15.2.10",
+    "nodemon": "^3.1.4",
     "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "mysql2": "^3.11.0"
   }
 }
