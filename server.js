@@ -1,14 +1,5 @@
 
-import { createConnection } from './dbConnection.js';
 
-async function runQuery() {
-  try {
-    const connection = await createConnection();
+import { createDatabase } from './databaseSetup.js';
 
-    await connection.end();
-  } catch (err) {
-    console.error('Error running query:', err);
-  }
-}
-
-runQuery();
+createDatabase();

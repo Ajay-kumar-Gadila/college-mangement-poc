@@ -1,19 +1,15 @@
-import mysql from 'mysql2';
-import { DB_CONFIG } from './lib/constants.js';
+// dbConnection.js
+import mysql from 'mysql2/promise';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export async function createConnection() {
-  try {
-    const connection = await mysql.createConnection({
-      host: DB_CONFIG.HOST,
-      user: DB_CONFIG.USER,
-      password: DB_CONFIG.PASSWORD,
-      database: DB_CONFIG.DATABASE,
-    });
-
-    console.log('Connected to the database');
-    return connection;
-  } catch (err) {
-    console.error('Error connecting to the database:', err);
-    throw err;
-  }
+  return mysql.createConnection({
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    // database: process.env.DB_NAME,
+    multipleStatements: true,
+  });
 }
