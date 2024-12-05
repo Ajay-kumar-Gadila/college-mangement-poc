@@ -2,7 +2,7 @@
   "name": "rebuild-2024",
   "version": "1.0.0",
   "description": "��#\u0000 \u0000c\u0000o\u0000l\u0000l\u0000e\u0000g\u0000e\u0000-\u0000m\u0000a\u0000n\u0000g\u0000e\u0000m\u0000e\u0000n\u0000t\u0000-\u0000p\u0000o\u0000c\u0000\r\u0000 \u0000",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "commit": "commit",
     "preinstall": "git submodule update --init --recursive",
@@ -36,6 +36,11 @@
     "husky": "^9.1.5",
     "husky-init": "^8.0.0",
     "lint-staged": "^15.2.10",
+    "nodemon": "^3.1.4",
     "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "mysql2": "^3.11.0",
+    "path": "^0.12.7"
   }
 }
